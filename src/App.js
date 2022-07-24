@@ -5,6 +5,7 @@ import GOOGLE_DRIVE_ICON from "./assets/images/Google_Drive_icon.png"
 import TELEGRAM_ICON from "./assets/images/Telegram_icon.png"
 import APP_GALLERY_ICON from "./assets/images/Huawei_AppGallery_icon.png"
 import GALAXY_STORE_ICON from "./assets/images/Galaxy_Store_icon.png"
+import {MDBBtn, MDBIcon} from "mdb-react-ui-kit";
 
 function App() {
   return (
@@ -59,7 +60,7 @@ function App() {
                     </ListGroup.Item>
                 </ListGroup>
             </Card>
-            <Card style={{height: "350px"}}>
+            <Card style={{height: "350px", marginBottom: "20px"}}>
                 <Card.Body>
                     <Card.Title style={{textDecoration: "underline"}}>Видео об игре</Card.Title>
                     <iframe
@@ -71,6 +72,22 @@ function App() {
                         allowFullScreen
                         title="Embedded youtube"
                     />
+                </Card.Body>
+            </Card>
+            <Card>
+                <Card.Body style={{padding: "10px"}}>
+                    <MDBBtn size="lg" className='m-1' floating style={{ backgroundColor: '#2AABEE' }} href='https://t.me/SopkaGame' target="_blank">
+                        <MDBIcon size="lg" fab icon='telegram-plane' />
+                    </MDBBtn>
+                    <MDBBtn size="lg" className='m-1' floating style={{ backgroundColor: '#ed302f' }} href='https://www.youtube.com/c/Крамс' target="_blank">
+                        <MDBIcon size="lg" fab icon='youtube' />
+                    </MDBBtn>
+                    <MDBBtn size="lg" className='m-1' floating style={{ backgroundColor: '#4c75a3' }} href='https://vk.com/flashdown' target="_blank">
+                        <MDBIcon size="lg" fab icon='vk' />
+                    </MDBBtn>
+                    <MDBBtn size="lg" className='m-1' floating style={{ backgroundColor: '#7289d9' }} href='https://discord.gg/H6EGVhG' target="_blank">
+                        <MDBIcon size="lg" fab icon='discord' />
+                    </MDBBtn>
                 </Card.Body>
             </Card>
         </div>
