@@ -10,7 +10,15 @@ function App() {
   return (
     <div>
         <div className={"linksCard"}>
-            <Card>
+            <Card style={{marginBottom: "20px"}}>
+                <Card.Body>
+                    <Card.Title style={{textDecoration: "underline"}}>Описание игры</Card.Title>
+                    <Card.Text>
+                        Игра про стримера - 5opka (Пятёрка). В данной игре вам предстоит уворачиваться от падающих предметов, либо же подбирать полезные предметы. Игра наполнена мемами и отсылками на Пятёрку, а также на игру Майнкрафт.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card style={{marginBottom: "20px"}}>
                 <Card.Header>СКАЧАТЬ FLASH DOWN</Card.Header>
                 <ListGroup variant="flush">
                     <ListGroup.Item style={{display: "flex", alignItems: "center"}}>
@@ -20,7 +28,7 @@ function App() {
                             <div style={{flex: "1"}}>
                                 APK Файл
                             </div>
-                        <Button onClick={() => window.open("https://drive.google.com/file/d/1jHUQNt1KiLzHuUjtfSm-ThNO0z2mrqAg/view?usp=sharing", '_blank')}>Скачать</Button>
+                        <Button onClick={() => window.open("https://drive.google.com/file/d/1jHUQNt1KiLzHuUjtfSm-ThNO0z2mrqAg/view?usp=sharing", '_blank')}>Перейти</Button>
                     </ListGroup.Item>
                     <ListGroup.Item style={{display: "flex", alignItems: "center"}}>
                         <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
@@ -29,7 +37,7 @@ function App() {
                         <div style={{flex: "1"}}>
                             Telegram
                         </div>
-                        <Button onClick={() => window.open("https://t.me/SopkaGame", '_blank')}>Скачать</Button>
+                        <Button onClick={() => window.open("https://t.me/SopkaGame", '_blank')}>Перейти</Button>
                     </ListGroup.Item>
                     <ListGroup.Item style={{display: "flex", alignItems: "center"}}>
                         <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
@@ -38,7 +46,7 @@ function App() {
                         <div style={{flex: "1"}}>
                             App Gallery
                         </div>
-                        <Button onClick={() => window.open("https://appgallery.huawei.com/app/C106714959", '_blank')}>Скачать</Button>
+                        <Button onClick={() => window.open("https://appgallery.huawei.com/app/C106714959", '_blank')}>Перейти</Button>
                     </ListGroup.Item>
                     <ListGroup.Item style={{display: "flex", alignItems: "center"}}>
                         <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
@@ -47,9 +55,23 @@ function App() {
                         <div style={{flex: "1"}}>
                             Galaxy Store
                         </div>
-                        <Button onClick={() => window.open("https://t.me/SopkaGame", '_blank')}>Скачать</Button>
+                        <Button onClick={() => window.open("https://t.me/SopkaGame", '_blank')}>Перейти</Button>
                     </ListGroup.Item>
                 </ListGroup>
+            </Card>
+            <Card style={{height: "350px"}}>
+                <Card.Body>
+                    <Card.Title style={{textDecoration: "underline"}}>Видео об игре</Card.Title>
+                    <iframe
+                        width="100%"
+                        height="90%"
+                        src={`https://www.youtube.com/embed/QMCg7gfA5V4`}
+                        frameBorder="0"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Embedded youtube"
+                    />
+                </Card.Body>
             </Card>
         </div>
     </div>
