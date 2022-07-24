@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/5opka-game-links/static/css/main.a73436b7.css",
-    "main.js": "/5opka-game-links/static/js/main.f017040b.js",
+    "main.js": "/5opka-game-links/static/js/main.38e1c27f.js",
     "static/media/Google_Drive_icon.png": "/5opka-game-links/static/media/Google_Drive_icon.3a1bd09b723b29f70840.png",
     "static/media/Huawei_AppGallery_icon.png": "/5opka-game-links/static/media/Huawei_AppGallery_icon.49e13efe92ca5370333f.png",
     "static/media/backgroundImage.jpg": "/5opka-game-links/static/media/backgroundImage.f20cba011df90e1c299c.jpg",
@@ -9,10 +9,10 @@
     "static/media/Galaxy_Store_icon.png": "/5opka-game-links/static/media/Galaxy_Store_icon.126d2ba8f6fd6467bd6a.png",
     "index.html": "/5opka-game-links/index.html",
     "main.a73436b7.css.map": "/5opka-game-links/static/css/main.a73436b7.css.map",
-    "main.f017040b.js.map": "/5opka-game-links/static/js/main.f017040b.js.map"
+    "main.38e1c27f.js.map": "/5opka-game-links/static/js/main.38e1c27f.js.map"
   },
   "entrypoints": [
     "static/css/main.a73436b7.css",
-    "static/js/main.f017040b.js"
+    "static/js/main.38e1c27f.js"
   ]
 }
