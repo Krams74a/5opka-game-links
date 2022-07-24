@@ -20,7 +20,7 @@ function App() {
                             <MDBIcon size="lg" fas icon='sun'/>
                         </MDBBtn>
                     </div>
-                    <Card style={{marginBottom: "20px", backgroundColor: "black", color: "white"}}>
+                    <Card bg="dark" text={isDarkTheme ? "white" : "dark"} style={{marginBottom: "20px"}}>
                         <Card.Body>
                             <Card.Title style={{textDecoration: "underline"}}>Описание игры</Card.Title>
                             <Card.Text>
@@ -31,13 +31,13 @@ function App() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card style={{marginBottom: "20px", backgroundColor: "black", color: "white"}}>
+                    <Card bg="dark" text={isDarkTheme ? "white" : "dark"} style={{marginBottom: "20px"}}>
                         <Card.Header style={{borderBottom: "2px solid rgb(76 76 76)"}}>СКАЧАТЬ FLASH DOWN</Card.Header>
                         <ListGroup variant="flush">
                             <ListGroup.Item style={{
                                 display: "flex",
                                 alignItems: "center",
-                                backgroundColor: "black",
+                                backgroundColor: "rgb(38,38,38)",
                                 color: "white",
                                 borderBottom: "2px solid rgb(76 76 76)"
                             }}>
@@ -53,7 +53,7 @@ function App() {
                             <ListGroup.Item style={{
                                 display: "flex",
                                 alignItems: "center",
-                                backgroundColor: "black",
+                                backgroundColor: "rgb(38,38,38)",
                                 color: "white",
                                 borderBottom: "2px solid rgb(76 76 76)"
                             }}>
@@ -68,7 +68,7 @@ function App() {
                             <ListGroup.Item style={{
                                 display: "flex",
                                 alignItems: "center",
-                                backgroundColor: "black",
+                                backgroundColor: "rgb(38,38,38)",
                                 color: "white",
                                 borderBottom: "2px solid rgb(76 76 76)"
                             }}>
@@ -84,7 +84,7 @@ function App() {
                             <ListGroup.Item style={{
                                 display: "flex",
                                 alignItems: "center",
-                                backgroundColor: "black",
+                                backgroundColor: "rgb(38,38,38)",
                                 color: "white"
                             }}>
                                 <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
@@ -97,7 +97,7 @@ function App() {
                             </ListGroup.Item>
                         </ListGroup>
                     </Card>
-                    <Card style={{height: "350px", marginBottom: "20px", backgroundColor: "black", color: "white"}}>
+                    <Card bg="dark" text={isDarkTheme ? "white" : "dark"} style={{height: "350px", marginBottom: "20px"}}>
                         <Card.Body>
                             <Card.Title style={{textDecoration: "underline"}}>Видео об игре</Card.Title>
                             <iframe
@@ -111,7 +111,7 @@ function App() {
                             />
                         </Card.Body>
                     </Card>
-                    <Card style={{backgroundColor: "black", color: "white"}}>
+                    <Card bg="dark" text={isDarkTheme ? "white" : "dark"}>
                         <Card.Body style={{padding: "10px"}}>
                             <MDBBtn size="lg" className='m-1' floating style={{backgroundColor: '#2AABEE'}}
                                     href='https://t.me/SopkaGame' target="_blank">
