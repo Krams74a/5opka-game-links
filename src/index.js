@@ -7,10 +7,5 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <div className={"main-div"}>
-        <div className={"bg-image"}>
-
-        </div>
         <App />
-    </div>
 );

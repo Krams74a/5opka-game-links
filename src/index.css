@@ -1,26 +1,10 @@
-html {
-  height: 100%;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
-}
-
-.main-div {
-  height: 100%;
-}
-
 body {
-  height: 100%;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Roboto, Helvetica, Arial, sans-serif;
-
 }
 
 code {
@@ -28,19 +12,6 @@ code {
     monospace;
 }
 
-.bg-image {
-  background-image: url("./assets/images/backgroundImage.jpg");
-  background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-}
-
-.bg-image::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px); /* apply the blur */
-  pointer-events: none; /* make the overlay click-through */
+html {
+  background-color: aliceblue;
 }
