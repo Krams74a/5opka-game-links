@@ -12,12 +12,11 @@ function App() {
     return (
         <div>
             <HashRouter>
-                <Header />
                 <div style={{backgroundColor: `${isDarkTheme ? "black" : "aliceblue"}`}}>
                     <Routes>
-                        <Route path='' element={<div>MAIN</div>}/>
+                        <Route path='' element={<Links isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme}/>}/>
                         <Route path="downloads" element={<Links isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme}/>}/>
-                        <Route path="records" element={<div>test</div>}/>
+                        <Route path="records" element={<Links isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme}/>}/>
                     </Routes>
                 </div>
             </HashRouter>

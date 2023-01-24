@@ -5,6 +5,7 @@ import GOOGLE_DRIVE_ICON from "../../assets/images/Google_Drive_icon.png";
 import TELEGRAM_ICON from "../../assets/images/Telegram_icon.png";
 import APP_GALLERY_ICON from "../../assets/images/Huawei_AppGallery_icon.png";
 import GALAXY_STORE_ICON from "../../assets/images/Galaxy_Store_icon.png";
+import GET_APPS_ICON from "../../assets/images/Get_apps_icon.png";
 
 
 const Links = ({isDarkTheme, setIsDarkTheme}) => {
@@ -97,6 +98,22 @@ const Links = ({isDarkTheme, setIsDarkTheme}) => {
                         display: "flex",
                         alignItems: "center",
                         backgroundColor: `${isDarkTheme ? "rgb(38,38,38)" : "white"}`,
+                        color: `${isDarkTheme ? "white" : "black"}`,
+                        borderBottom: `${isDarkTheme ? "2px solid rgb(76 76 76)" : "2px solid #dfdfdf"}`
+                    }}>
+                        <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
+                            <img src={GET_APPS_ICON} style={{height: "100%", width: "100%"}}/>
+                        </div>
+                        <div style={{flex: "1"}}>
+                            GetApps
+                        </div>
+                        <Button
+                            onClick={() => window.open("https://global.app.mi.com/details?lo=RU&la=ru_RU&id=com.FGG.FlashDown", '_blank')}>Перейти</Button>
+                    </ListGroup.Item>
+                    <ListGroup.Item style={{
+                        display: "flex",
+                        alignItems: "center",
+                        backgroundColor: `${isDarkTheme ? "rgb(38,38,38)" : "white"}`,
                         color: `${isDarkTheme ? "white" : "black"}`
                     }}>
                         <div style={{height: "30px", width: "30px", marginRight: "15px"}}>
@@ -108,6 +125,7 @@ const Links = ({isDarkTheme, setIsDarkTheme}) => {
                         <Button
                             onClick={() => window.open("https://apps.samsung.com/appquery/appDetail.as?appId=com.FGG.FlashDown", '_blank')}>Перейти</Button>
                     </ListGroup.Item>
+
                 </ListGroup>
             </Card>
             <Card bg={isDarkTheme ? "dark" : "white"} text={isDarkTheme ? "white" : "dark"}
@@ -117,7 +135,7 @@ const Links = ({isDarkTheme, setIsDarkTheme}) => {
                     <iframe
                         width="100%"
                         height="90%"
-                        src={`https://www.youtube.com/embed/QMCg7gfA5V4`}
+                        src={`https://www.youtube.com/embed/-3Lzdu0lYaU`}
                         frameBorder="0"
                         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
